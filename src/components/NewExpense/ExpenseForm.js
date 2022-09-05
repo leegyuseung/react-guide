@@ -19,7 +19,7 @@ const ExpenseForm = (props) => {
     // });
   };
 
-  const amoutChangeHandler = (e) => {
+  const amountChangeHandler = (e) => {
     setEnteredAmount(e.target.value);
     // setUserInput((prevState) => {
     //   return { ...prevState, enteredAmount: e.target.value };
@@ -65,7 +65,7 @@ const ExpenseForm = (props) => {
             type="text"
             min="0.01"
             step="0.01"
-            onChange={amoutChangeHandler}
+            onChange={amountChangeHandler}
             value={enteredAmount}
           />
         </div>
